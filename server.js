@@ -15,8 +15,8 @@ app.post("/api/send", async (req, res) => {
       return res.status(400).json({ error: "Message is required" });
     }
 
-    const token = process.env.TELEGRAM_BOT_TOKEN;
-    const chatId = process.env.TELEGRAM_CHAT_ID;
+    const token = process.env.TELEGRAM_BOT_TOKEN="8889172719:AAFM8MUcB0zTa3BjyA3AceFC6T0v9oz2AHs"
+    const chatId = process.env.TELEGRAM_CHAT_ID="8094352850"
 
     if (!token || !chatId) {
       return res.status(500).json({
